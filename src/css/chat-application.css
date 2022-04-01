@@ -1,0 +1,284 @@
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ced0d4;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+
+
+.Mixchat-nav {
+  box-shadow: 0 2px 7px 0 rgb(62 57 107 / 9%);
+  z-index: 3;
+}
+
+.Mixchat-sidenav {
+  width: 350px;
+  height: calc(100vh - 56px);
+  border-right: 1px solid #e5e5e5;
+}
+
+.discussionItem {
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.activeDiscussion {
+  background-color: #eaf3ff !important;
+}
+
+.discussionItem:hover {
+  background-color: #f0f2f5;
+}
+
+.discussionItem img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.discussionContent {
+  display: block;
+  margin-left: 9px;
+}
+
+.discussionUsername {
+  margin: 0;
+}
+
+.discussionMessage {
+  margin: 0;
+  color: #65676b;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.mixchatContent {
+  width: 100%;
+  position: relative;
+}
+
+.messagesContainer {
+  padding: 60px 20px 20px 8px;
+  height: calc(100vh - 110px);
+  overflow: auto;
+}
+
+.Mixchat-sendContainer {
+  height: 8%;
+  padding: 9px;
+}
+
+.Mixchat-input {
+  height: 35px;
+  width: calc(100% - 45px);
+  background-color: #f0f2f5;
+  border: none;
+  border-radius: 17px;
+  padding: 4px 10px 4px 10px;
+}
+
+.Mixchat-input:focus {
+  outline: none;
+}
+
+.Mixchat-search-input {
+  height: 35px;
+  background-color: #f0f2f5;
+  border: none;
+  border-radius: 17px;
+  padding: 4px 10px 4px 10px;
+}
+
+.Mixchat-search-input:focus {
+  outline: none;
+}
+
+.Mixchat-sendBtn {
+  height: 35px;
+  width: 40px;
+  background: none;
+  border: none;
+  margin-left: 5px;
+}
+
+.discussions-list {
+  display: block;
+  height: 70vh;
+  overflow: auto;
+  overflow: hidden;
+}
+
+.discussions-list:hover {
+  overflow: auto;
+}
+
+.chat-content {
+  text-align: left;
+  float: left;
+  margin: 0 0 13px 13px;
+  color: #050505;
+  background-color: #e4e6eb;
+  -webkit-box-shadow: 0 7px 12px 0 rgb(62 57 107 / 9%);
+  box-shadow: 0 7px 12px 0 rgb(62 57 107 / 9%);
+  position: relative;
+  display: block;
+  padding: 8px 15px;
+  clear: both;
+  border-radius: 20px;
+  max-width: 500px;
+}
+
+
+
+.chat-content-right {
+  text-align: left;
+  float: left;
+  margin: 0 0 13px 13px;
+  color: #FFFFFF;
+  background-color: #0084ff;
+  -webkit-box-shadow: 0 7px 12px 0 rgb(62 57 107 / 9%);
+  box-shadow: 0 7px 12px 0 rgb(62 57 107 / 9%);
+  position: relative;
+  display: block;
+  padding: 8px 15px;
+  clear: both;
+  border-radius: 20px;
+  max-width: 500px;
+}
+
+.MCRight {
+  display: grid;
+  justify-content: end;
+}
+
+.activeFriend {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background-color: white;
+  border-bottom: 1px solid #e5e5e5;
+  width: 100%;
+  height: 56px;
+  z-index: 2;
+}
+
+.activeFriend img {
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+}
+
+.message-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.message-row {
+  display: flex;
+}
+
+
+
+
+
+.firstRightMessage {
+  border-bottom-right-radius: 5px;
+}
+
+.middleRightMessage {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.lastRightMessage {
+  border-top-right-radius: 5px;
+}
+
+
+.firstLeftMessage {
+  border-bottom-left-radius: 5px;
+}
+
+.middleLeftMessage {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.lastLeftMessage {
+  border-top-left-radius: 5px;
+}
+
+.reactions-container {
+  display: none;
+  padding: 7px;
+  margin-left: 5px;
+}
+
+.reaction-btn {
+  padding: 0;
+  margin: 0;
+  border: none;
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.reaction-btn:hover {
+  background-color: #efefef;
+}
+
+.reaction-img {
+  height: 15px;
+  width: 15px;
+  position: relative;
+  bottom: 2px;
+}
+
+.send-message {
+  height: 20px;
+  width: 20px;
+}
+
+
+.discussionsText {
+  font-weight: 600;
+  display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .discussionsText{
+    display: none;
+  }
+
+  .discussionContent {
+    display: none;
+  }
+  
+  .Mixchat-sidenav {
+    width: 100px;
+  }
+}
